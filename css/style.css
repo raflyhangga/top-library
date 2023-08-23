@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;0,700;1,700&display=swap');
+
+:root {
+    --bgColor: #2b2d42;
+    --cardColor: #edf2f4;
+    --listPrimary: #ef233c;
+    --buttonColor: #00b4d8;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: var(--bgColor);
+}
+
+.main-title {
+    padding-top: 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.main-title h1 {
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.main-title button {
+    margin-top: 20px;
+    border: none;
+    background-color: var(--buttonColor);
+    color: white;
+    font-size: 1.3em;
+    padding: .4em .6em;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.content {
+    display: flex;
+    margin: 50px 20px;
+}
+
+.content .card {
+    font-size: 1.6em;
+}
+
+.content .card .title {
+    background-color: var(--listPrimary) ;
+    padding: .5em .3em;
+}
+
+.content .card .title h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: white;
+}
+
+.card-container {
+    background-color: var(--cardColor);
+    padding-left: .5em ;
+    padding-right: .5em ;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 15px;
+    padding-bottom: 1em;
+}
+
+.content .card .author h2, 
+.content .card .pages h2, 
+.content .card .read h2 {
+    font-size: .6em;
+}
+
+.content .card .author p, 
+.content .card .pages p, 
+.content .card .read p {
+    font-size: .9em;
+}
+
+.content .card .button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.content .card .button button {
+    border: none;
+    background-color: var(--buttonColor);
+    color: white;
+    font-size: .5em;
+    padding: .4em .6em;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
+}
