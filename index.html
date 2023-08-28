@@ -11,31 +11,35 @@
     <div class="main-title">
         <h1>A Simple Library</h1>
         <h2>Created by Rafly Hanggaraksa</h2>
-        <button>Add a book!</button>
+        <button id="addBook">Add a book!</button>
+    </div>
+    <div class="form">
+        <form>
+            <ul>
+                <li>
+                    <label for="bookTitle">Book Title</label>
+                    <input type="text" id="bookTitle">
+                </li>
+                <li>
+                    <label for="author">Author</label>
+                    <input type="text" id="author">
+                </li>
+                <li>
+                    <label for="pages">Pages</label>
+                    <input type="tel" id="pages">
+                </li>
+                <li>
+                    <label for="read">Have you read it?</label>
+                    <select name="read" id="read">
+                        <option value="true">Yes!</option>
+                        <option value="false">No.</option>
+                    </select>
+                </li>
+            </ul>
+            <button type="submit" id="newBook">New Book</button>
+        </form>
     </div>
     <div class="content">
-        <div class="card">
-            <div class="title">
-                <h2>Title</h2>
-            </div>
-            <div class="card-container">
-                <div class="author">
-                    <h2>Author</h2>
-                    <p>Cucung Sukardi</p>
-                </div>
-                <div class="pages">
-                    <h2>Pages</h2>
-                    <p>210</p>
-                </div>
-                <div class="read">
-                    <h2>Read</h2>
-                    <p>Yes</p>
-                </div>
-                <div class="button">
-                    <button type="submit">Read Status</button>
-                    <button type="submit">Delete</button>
-                </div>
-            </div>
         </div>
     </div>
 
